@@ -1,0 +1,1102 @@
+/*Common Css Start*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    color: #333;
+    font-size: 15px;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.80857;
+}
+a{
+    transition: all .3s ease;
+}
+.barber-owner-container{
+    padding: 0px 125px;
+}
+/*Common Css End*/
+
+/*Header Css Start*/
+.header-navbar {
+    padding: 15px 125px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+}
+.header-logo img {
+    vertical-align: middle;
+}
+.header-menubar {
+    display: flex;
+    align-items: center;
+}
+.header-menubar .header-menubar-item {
+    list-style-type: none;
+    background: #010101;
+    position: relative;
+    z-index: 0;
+}
+
+.header-menubar .header-menubar-item .nav-link {
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+}
+
+.header-menubar .header-menubar-item .nav-link:after {
+    content: '';
+    position: absolute;
+    background: #ed2d46;
+    width: 10px;
+    height: 10px;
+    left: 0;
+    bottom: 0;
+    border-radius: 0px 50px 0px 0px;
+    transition: .3s linear;
+    z-index: -1;
+}
+.header-menubar .header-menubar-item .nav-link:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 15px 0px 0px;
+}
+/*Header Css End*/
+
+ /*Banner Css Start*/
+.slider{
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+.slider figure div{
+    width: 20%;
+    float: left;
+    position: relative;
+}
+.slider figure img{
+    width: 100%;
+    float: left;
+}
+.slider .slide img {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.slider .overly:before {
+    content: '';
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 999;
+}
+.slider-inner-text h2 {
+    color: #ffffff;
+    font-size: 48px;
+}
+.slider-inner-text p {
+    color: #ffffff;
+    padding: 0px 0px 30px 0px;
+
+}.slide a {
+    font-size: 18px;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 42px;
+    margin-top: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 0px 30px;
+}
+.slide a:hover {
+    color: #ffffff;
+    background: #ed2d46;
+    cursor: pointer;
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s rashed infinite;
+}
+.slide .slider-inner-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    width: 100%;
+    text-align: center;
+}
+@keyframes rashed{
+  0%{
+        left: 0%;
+    }
+    10%{
+        left: 0%;
+    }
+    12%{
+        left: -100%;
+    }
+    22%{
+        left: -100%;
+    }
+    24%{
+        left: -200%;
+    }
+    34%{
+        left: -200%;
+    }
+    36%{
+        left: -300%;
+    }
+    46%{
+        left: -300%;
+    }
+    48%{
+        left: -400%;
+    }
+    58%{
+        left: -400%;
+    }
+    60%{
+        left: -300%;
+    }
+    70%{
+        left: -300%;
+    }
+    72%{
+        left: -200%;
+    }
+    82%{
+        left: -200%;
+    }
+    84%{
+        left: -100%;
+    }
+    94%{
+        left: -100%;
+    }
+    96%{
+        left: 0%;
+    }
+
+}
+/*Banner Css End*/
+
+/*About Css Start*/
+.section{
+    padding: 70px 0px;
+}
+.container {
+    padding: 70px 125px;
+}
+.about-section-inner {
+    text-align: left;
+}
+.about-full-description{
+    background: url(../image/about-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 40px 0px;
+}
+.about-section .about-equal {
+    width: calc(92% / 2);
+    margin: 0% 2%;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-intro h4 {
+    color: #424145 !important;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 0;
+    margin: 0px 0px 5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: inherit;
+    line-height: 120% !important;
+}
+
+.about-title h2 {
+    font-size: 38px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0px 0px 10px;
+    color: #1f1f1f;
+    line-height: 120% !important;
+    text-transform: none;
+}
+
+.about-details p:first-child {
+    font-size: 19px;
+    font-style: normal;
+    color: #ed2d46;
+    margin: 0px 0px 20px;
+    padding: 10px 0px 0px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.about-details p:last-child {
+    color: #333333;
+    font-size: 15px;
+    margin: 0px 0px 20px;
+    font-weight: 400;
+}
+.about-button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #111111;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 41px;
+    margin-top: 0;
+    padding: 0px 35px;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+.about-button a:hover {
+    color: #ffffff;
+    background: #ed2d46;
+    cursor: pointer;
+}
+.about-button a:focus{
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 0 0.2rem rgba(248,249,250,.5);
+}
+.about-image-box img {
+    max-width: 100%;
+    height: auto;
+}
+hr.hr-line {
+    position: relative;
+    margin: 60px 0;
+    border: 1px dashed #f2f3f5;
+}
+.main-about-section {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #e1e1e1;
+}
+.main-about-section-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    margin: 0 !important;
+}
+
+.main-about-section-item a.active {
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #ed2d46;
+    font-size: 15px;
+    padding: 8px 16px;
+    display: block;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+.main-about-section-item a{
+    text-decoration: none;
+    color: #1F1F1F;
+    background: #f4f4f4;
+    font-size: 15px;
+    padding: 8px 16px;
+    display: block;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+.main-about-section-item a:hover {
+    color: #ffffff;
+    background: #111111;
+    border: none;
+}
+.main-about-section-detail-inner {
+    padding: 20px;
+    text-align: center;
+}
+
+.main-about-section-detail-inner p {
+    color: #333333;
+    margin: 0px 0px 16px;
+    font-size: 15px;
+}
+.barbershop-hair-style-img-box img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.barbershop-hair-style-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.barbershop-hair-style-section .barber-item-equal {
+    width: calc(94% / 3);
+    margin: 0% 1%;
+}
+.barbershop-hair-style-content {
+    background: #ed2d46;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.barbershop-hair-style-title h3 {
+    font-size: 20px;
+    margin: 0px;
+    padding: 12px 0px 12px;
+    font-weight: 700;
+}
+.barbershop-hair-style-description p {
+    margin-bottom: 0;
+    font-size: 15px;
+    padding-bottom: 0;
+}
+a.hover-button {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    color: #1f1f1f !important;
+    top: 27%;
+    font-size: 21px;
+    z-index: 12;
+    left: 0;
+    opacity: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: -20px auto;
+    text-decoration: none;
+}
+.barbershop-hair-style-item:hover .hover-button {
+    opacity: 1;
+}
+/*About Css End*/
+
+/*Barber Price Css Start*/
+.hair-styler-price-section {
+    background: #f9f9f9;
+    padding: 70px 0px;
+}
+.hair-style-price-title {
+    display: block;
+    position: relative;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.hair-style-price-title small {
+    color: #333333;
+    font-size: 15px;
+}
+.hair-style-price-title h3 {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1 !important;
+    padding: 10px 0px 0px;
+    margin: 0px 0px 25px;
+}
+.barber-shop-pricing-catagory {
+    text-align: center;
+    padding: 2.25rem 0;
+    will-change: transform;
+    transition: all .3s ease-in-out;
+}
+.barber-pric-sec-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-block .barber-shop-catalog h4 {
+    background: #010101;
+    color: #ffffff;
+    padding: 15px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0px 16px;
+    line-height: 120% !important;
+}
+
+.pricing-title {
+    padding: 0px 15px;
+    margin-bottom: 20px;
+}
+
+.pricing-title h5 {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0px 0px 10px;
+    border-bottom: 1px dashed #010101;
+}
+
+.pricing-title p {
+    font-size: 12px;
+    margin: 0px;
+    color: #333333;
+    padding: 0px 0px 5px;
+}
+
+.pricing-title a {
+    text-decoration: none;
+    background: #ed2d46;
+    color: #ffffff;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+.barber-pric-sec-wrapper .card {
+    width: calc(94% / 3);
+    margin: 0% 1%;
+}
+.card:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+}
+.card:after {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background-color: #ed2d46;
+    transition: 0.5s;
+
+}
+.card:hover:after {
+    width: 100%;
+}
+/*Barber Price Css End*/
+
+/*Barber Team-Member Css Start*/
+.barbers-owner-section {
+    background-color: #f9f9f9;
+    padding: 70px 0px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.barber-owner-sec-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.barber-owner-sec-wrapper .single-barber-member {
+    width: calc(84% / 3);
+    margin: 0% 1%;
+}
+.barbers-owner-title {
+    display: block;
+    position: relative;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.barbers-owner-title small {
+    font-size: 15px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.barbers-owner-title h3 {
+    font-size: 34px;
+    color: #1F1F1F;
+    font-weight: bold;
+    line-height: 1 !important;
+    margin: 0px 0px 25px;
+    padding: 10px 0px 0px;
+}
+.barbers-owner-section-inner {
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #ededed;
+    -webkit-box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
+    box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
+    position: relative;
+}
+.barbers-ownership-box {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.barbers-ownership-img-box img {
+    width: 100%;
+}
+
+.social-icon-up-box {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    text-align: center;
+    transform: none;
+    transition: all 500ms ease;
+    background: rgba(237,45,70,0.5);
+}
+
+.social-icon-inner-box {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 32px;
+    width: auto;
+    padding: 0px 40px;
+}
+.barbers-owner-section-inner:hover .barbers-ownership-box .social-icon-up-box .social-icon-inner-box {
+    transform: scale(1.1);
+    opacity: 1;
+    transition: all 2s ease-in-out;
+}
+.barbers-owner-section-inner:hover .barbers-ownership-box .social-icon-up-box {
+    top: 0%;
+    opacity: 1;
+}
+.social-icon-inner-box a {
+    background: #111111;
+    color: #ffffff;
+    margin: 0px 2px;
+    border-radius: 0px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.barbers-team-box {
+    padding: 10px;
+    text-align: left;
+}
+
+.barbers-team-title {
+    padding: 20px 0px 10px;
+    margin: 0;
+    line-height: 1 !important;
+}
+
+.barbers-team-title h3 {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1 !important;
+    padding: 0px 0px 5px;
+    color: #1F1F1F;
+}
+
+.barbers-team-title small {
+    color: #333333;
+    font-size: 12px;
+}
+
+.barbers-team-description p {
+    font-size: 15px;
+    color: #333333;
+    margin: 0;
+    padding: 5px 0px 15px;
+}
+.barbers-owner-section-inner .t-top:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 0;
+    background-color: #000;
+    transition: all .5s ease;
+}
+
+.barbers-owner-section-inner .t-top:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background-color: #000;
+    transition: all .5s ease;
+}
+.barbers-owner-section-inner:hover .t-top:before {
+    width: 100%;
+}
+.barbers-owner-section-inner:hover .t-top:after {
+    height: 100%;
+}
+.barbers-owner-section-inner .t-bottom:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: #000;
+    transition: all .5s ease;
+}
+
+.barbers-owner-section-inner .t-bottom:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: all .5s ease;
+}
+.barbers-owner-section-inner:hover .t-bottom:before {
+    width: 100%;
+}
+.barbers-owner-section-inner:hover .t-bottom:after {
+    height: 100%;
+}
+/*Barber Team-Member Css End*/
+
+/*Barber Testimonial Css Start*/
+.barbershop-testimonials-section{
+    background: url(../image/parallax_20.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 70px 0px;
+}
+.barbershop-testimonials-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.barbershop-testimonials-intro .testimonial-sing-page {
+    width: calc(96% / 2);
+    margin: 0% 1%;
+}
+.barbershop-testimonials-title {
+    display: block;
+    position: relative;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.barbershop-testimonials-title small {
+    color: #ffffff;
+    font-size: 15px;
+}
+.barbershop-testimonials-title  h3 {
+    color: #ffffff;
+    font-size: 34px;
+    margin: 0px 0px 25px;
+    padding: 10px 0px 0px;
+    font-weight: bold;
+    line-height: 1 !important;
+}
+.barbershop-testimonials-content {
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.barbershop-testimonials-content i {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.barbershop-testimonials-content img {
+    display: block;
+    width: 100%;
+    max-width: 55px;
+    float: right;
+    margin: 10px 0px 20px 20px;
+}
+
+.barbershop-testimonials-content h4 {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 13px 0px 0px;
+    margin: 0;
+}
+
+.barbershop-testimonials-content small {
+    background-color: transparent;
+    color: #ffffff;
+    font-style: normal;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-size: 16px;
+}
+.barbershop-testimonials-description {
+    background: #ed2d46;
+    padding: 30px;
+    border: 1px solid #ed2d46;
+    text-align: right;
+    border-radius: 2px;
+}
+.barbershop-testimonials-item {
+    width: 540px;
+    margin: 0px 30px 0px 0px;
+    display: block;
+}
+.barbershop-testimonials-description h3 {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0px 0px 10px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.barbershop-testimonials-description p {
+    background-color: transparent;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    line-height: 30px;
+    font-weight: 300;
+    position: relative;
+    font-size: 16px;
+    display: block;
+}
+.barbershop-testimonials-item:hover .barbershop-testimonials-description {
+    background-color: #010101;
+}
+/*Barber Testimonial Css End*/
+
+/*Barber Service Banner Section Start*/
+.service-banner-section{
+    background: url(../image/barber_all.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.service-banner-sec-all-content {
+    padding: 120px 0 90px 0;
+    text-align: center;
+}
+.service-banner-section:before {
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.service-img-box {
+    margin-bottom: 10px;
+}
+.service-heading h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.service-button {
+    display: inline-block;
+}
+
+.service-button, 
+.service-button a {
+    background: #ed2d46;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #ffffff;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 0px;
+    text-transform: uppercase;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.service-button p {
+    display: inline-block;
+    padding: 10px;
+    color: #010101;
+    font-weight: 700;
+}
+/*Barber Service Banner Section End*/
+
+/*Barber Main Service Css Start*/
+.barber-service-heading-main {
+    margin-bottom: 60px;
+    position: relative;
+    text-align: center;
+}
+.barber-service-heading-content small {
+    font-size: 15px;
+}
+
+.barber-service-heading-content h3 {
+    font-size: 34px;
+    padding: 10px 0 0;
+    font-weight: bold;
+    line-height: 1 !important;
+    margin: 0 0 25px;
+    position: relative;
+}
+
+.barber-service-heading-content h3:after {
+    content: '';
+    position: absolute;
+    background: #111111;
+    width: 100px;
+    height: 2px;
+    bottom: -27px;
+    left: calc(50% - 50px);
+}
+.barber-service-heading-content p {
+    color: #999;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+}
+.barber-service-all-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.barber-service-all-content-inner {
+    width: calc(96% / 2);
+    margin: 0% 1%;
+}
+.barber-service-single-box {
+    margin: 30px 0;
+    padding: 20px;
+    display: block;
+    position: relative;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 5px 35px 0px rgb(148 146 245 / 15%);
+    box-shadow: 0px 5px 35px 0px rgb(148 146 245 / 15%);
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+    text-align: center;
+}
+
+.barber-service-img {
+    display: inline-block;
+    margin: auto;
+    padding: 10px;
+    transition: all 1s ease-in-out;
+    -webkit-box-shadow: 0px 5px 35px 0px rgb(148 146 245 / 15%);
+    box-shadow: 0px 5px 35px 0px rgb(148 146 245 / 15%);
+}
+.barber-service-single-box .barber-service-img img {
+    max-width: 120px;
+    transition: all 1s ease-in-out;
+    margin: 0;
+    vertical-align: middle;
+    float: left;
+}
+.barber-service-title h4 {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 0 0 10px 0;
+    color: #1f1f1f;
+}
+.barber-service-single-box:hover .barber-service-img {
+    transform: scale(1.07);
+    transition: all 1s ease-in-out;
+    z-index: 1;
+}
+.barber-service-single-box:hover .barber-service-img img {
+    border-radius: 100%;
+    transition: all 1s ease-in-out;
+}
+/*Barber Main Service Css End*/
+
+/*Barber Main Contact Css End*/
+.barber-main-contact-section {
+    background: url(../image/contact-bg.png) no-repeat center center #fff;
+}
+.barber-contact-main-heading {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.barber-contact-main-heading small {
+    font-size: 15px;
+}
+
+.barber-contact-main-heading h3 {
+    font-size: 34px;
+    padding: 10px 0 0;
+    font-weight: bold;
+    line-height: 1 !important;
+    margin: 0 0 25px;
+}
+.contact-form-wrapper {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+}
+
+.single-input-form {
+    width: calc(96% / 2);
+    margin: 0% 1%;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.contact_form-inner {
+    text-align: center;
+    background-color: #ffffff;
+    border: 0;
+    box-shadow: 0 5px 14px rgb(0 0 0 / 10%);
+    padding: 40px 30px;
+    max-width: 66.666667%;
+    margin-left: 16.666667%;
+}
+
+.single-input-form input,
+.full-area-input-form textarea {
+    background-color: #000;
+    border-bottom: 2px solid #1f1f1f;
+    margin-bottom: 30px;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    color: #bcbcbc;
+    font-size: 16px;
+    outline: 0 none;
+    padding: 10px 25px;
+    height: 55px;
+    resize: none;
+    box-shadow: none !important;
+    width: 100%;
+    border-radius: 4px;
+}
+.full-area-input-form textarea{
+    padding: 20px 25px !important;
+    height: 160px !important;
+}
+.full-area-input-form {
+    width: 100%;
+    margin: 0% 1%;
+}
+.input-submit-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.input-submit-btn button {
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 28px;
+    margin-top: 0;
+    padding: 6px 35px;
+    text-transform: uppercase;
+    background: #ed2d46;
+    width: 100%;
+    cursor: pointer;
+}
+/*Barber Main Contact Css End*/
+
+/*Footer Sec Css Start*/
+.footer-section {
+    background-color: #f6f6f6;
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding: 50px 60px;
+    overflow: hidden;
+}
+.footer-content {
+    float: none;
+    text-align: center;
+}
+
+.footer-menu {
+    margin: 0px 0px 10px;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    line-height: 1.8;
+    color: #010101;
+    background-color: transparent;
+    font-size: 15px;
+    outline: none !important;
+    transition: all .3s ease-in-out;
+}
+.footer-menu a:hover{
+    color: #ed2d46;
+}
+.footer-copy-right p {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0px 10px;
+    padding: 0;
+}
+.footer-copy-right p a{
+    color: #000000;
+    text-decoration: none;
+}
+.footer-copy-right p a:hover{
+    color: #ed2d46;
+}
+/*Footer Sec Css End*/
+
